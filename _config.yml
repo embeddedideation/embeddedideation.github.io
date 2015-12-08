@@ -1,0 +1,35 @@
+# Site settings
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           /:categories/:year/:month/:title/
+# Disabled for Jekyll 3 support
+#relative_permalinks: true
+
+# Setup
+title:               Embedded Ideation
+tagline:             Thoughts from inside the box
+#url:                 http://embeddedideation.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# Build settings
+markdown: kramdown
+
+# About/contact
+author:
+  name:              Vince Cali
+  url:               https://twitter.com/0x56
+  email:             embeddedideation@gmail.com
+
+gems:
+  - jekyll-paginate
+  - jekyll-gist
