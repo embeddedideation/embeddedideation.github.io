@@ -1,5 +1,5 @@
 ---
-layout:    page
+layout:    post
 title:     "Dissecting the AirPort Express"
 date:      2014-03-20 22:45:00
 permalink: /2014/03/dissecting-the-airport-express/
