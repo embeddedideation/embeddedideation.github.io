@@ -26,14 +26,14 @@ guide follows:
 There are two tabs on the bottom panel on the side closest to the rear ports. Release them first by prying
 the top case away from the bottom panel next to each tab:
 
-![Bottom panel tabs]({{ site.url }}/assets/a1392-bottom-case-tabs.jpg)  
+![Bottom panel tabs]({{ site.url }}/assets/a1392-bottom-case-tabs.jpg)
 _Two tabs on the bottom panel_
 
 The rest of the bottom panel is secured by clips around the edges. Insert the pry tool adjacent to the clip. This time, pry
 the inner edge of the bottom panel inwards, to release it from the clip protruding inward from the top case. Work around
 the perimeter of the panel, releasing the clip in each spot indicated:
 
-![Tab locations]({{ site.url }}/assets/a1392-case-clip-locations.jpg)  
+![Tab locations]({{ site.url }}/assets/a1392-case-clip-locations.jpg)
 _The remaining seven tabs are evenly spaced around the perimeter_
 
 The logic board and the power supply are the only two modules inside. The logic board is held down with Torx T8 screws.
@@ -56,7 +56,7 @@ The AP contains a MIPS 74Kc core in a big endian configuration. Substituted for 
 is the Nanya NT5TU32M16DG-AC. One thing overlooked by other teardowns was the SPI flash. It was obscured by a part of one
 of the EMI shield anchors; with the anchor removed, I was able to view the package:
 
-![Winbond SPI flash]({{ site.url }}/assets/a1392-spi-flash.jpg)  
+![Winbond SPI flash]({{ site.url }}/assets/a1392-spi-flash.jpg)
 _Winbond 25Q129BVEG 128Mbit SPI Flash_
 
 [prev-teardown-1]: http://weblog.rogueamoeba.com/2012/06/19/airport-express-disassembly/
@@ -68,7 +68,7 @@ Upon removal of the bottom panel, there is a debug header visible in the corner,
 layout nearly corresponds to the compact TI 20 pin connector for JTAG on certain ARM devices, except the two columns of
 pads are offset slightly:
 
-![Debug header close-up]({{ site.url }}/assets/a1392-debug-header.jpg)  
+![Debug header close-up]({{ site.url }}/assets/a1392-debug-header.jpg)
 _Close-up image of the debug header_
 
 Two of the pads are connected to the onboard low-speed UART. I used a FT232RL adapter to interface with the port, and
@@ -109,7 +109,7 @@ After connecting a logic analyzer to the unknown pads, I set the DISABLE\_JTAG b
 set the outputs high. One of the four unknown signals went from low to high (corresponding to the TDO pin). I performed a
 capture while toggling the output for confirmation:
 
-![Capture while toggling TDO]({{ site.url }}/assets/a1392-saleae-tdo-toggle.png)  
+![Capture while toggling TDO]({{ site.url }}/assets/a1392-saleae-tdo-toggle.png)
 _Captured while toggling the output level of the TDO line_
 
 Despite configuring all four GPIOs as outputs, only TDO responded with any change of output. To test the other three pads,
@@ -119,7 +119,7 @@ the two pads that cause the device to reset when pulled low, I have not figured 
 which is nSRST. I invite a reader with any thoughts on how to differentiate the two to leave a comment. Here is a labeled
 pinout of the debug header:
 
-![Debug Header Pinout]({{ site.url }}/assets/a1392-header-pinout.jpg)  
+![Debug Header Pinout]({{ site.url }}/assets/a1392-header-pinout.jpg)
 _Pinout of the AirPort Express N 2nd Generation router debug header_
 
 ## Firmware
