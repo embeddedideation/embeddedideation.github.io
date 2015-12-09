@@ -3,14 +3,14 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           /:categories/:year/:month/:title/
+permalink:           pretty
 # Disabled for Jekyll 3 support
 #relative_permalinks: true
 
 # Setup
 title:               Embedded Ideation
 tagline:             Thoughts from inside the box
-#url:                 http://embeddedideation.com
+url:                 http://embeddedideation.com
 paginate:            1
 baseurl:             ""
 
