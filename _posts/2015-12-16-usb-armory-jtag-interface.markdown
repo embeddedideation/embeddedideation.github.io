@@ -41,7 +41,7 @@ leads to possibly redo this in a cleaner way in the future. Where the leads rout
 receive a gob of hot glue in the future once I'm confident I don't need to open it again.
 
 The current setup works with OpenOCD, though there are still some issues to solve. While the boot ROM or U-Boot is executing
-the interface seems to work fine; I can halt the CPU and issue commands from theOpenOCD console. With the device booting
+the interface seems to work fine; I can halt the CPU and issue commands from the OpenOCD console. With the device booting
 into Linux however, multiple errors appear repeatedly:
 
 ~~~
