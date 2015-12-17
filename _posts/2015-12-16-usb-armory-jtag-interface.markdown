@@ -36,7 +36,7 @@ _JTAG test pads with connections soldered_
 ![Encased JTAG Interface]({{ site.url }}/assets/usb-armory-jtag-encased.jpg)
 _JTAG interface connections routed through official enclosure_
 
-I connected the JTAG leads to pin headers hastly and added some hot glue for strain relief. I left a bit of slack in the
+I connected the JTAG leads to pin headers hastily and added some hot glue for strain relief. I left a bit of slack in the
 leads to possibly redo this in a cleaner way in the future. Where the leads route through the enclosure will probably
 receive a gob of hot glue in the future once I'm confident I don't need to open it again.
 
