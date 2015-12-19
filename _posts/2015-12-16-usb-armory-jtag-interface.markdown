@@ -57,7 +57,7 @@ Error: Can't read component with base address 0x40001000, the corresponding core
 ~~~
 
 I will try to resolve these errors, however if they don't affect my ability to debug bootloader execution, they will likely
-remain a mystery for the forseeable future.
+remain a mystery for the foreseeable future.
 
 Here is the final setup with the Flyswatter 2 and UART breakout:
 
