@@ -9,6 +9,8 @@
       <header class="masthead">
         <h3 class="masthead-title">
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+        </h3>
+        <h3 class="masthead-title">
           <small>{{ site.tagline }}</small>
         </h3>
       </header>
@@ -17,11 +19,16 @@
         {{ content }}
       </main>
 
-      <footer class="footer">
+      <div class="footer">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+          <footer class="left">
+            &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+          </footer>
+          <footer class="right">
+            <a href="{{ site.baseurl }}/about/" title="About">About</a>
+          </footer>
         </small>
-      </footer>
+      </div>
     </div>
 
   </body>
