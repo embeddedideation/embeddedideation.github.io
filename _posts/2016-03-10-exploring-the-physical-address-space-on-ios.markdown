@@ -39,7 +39,7 @@ during process bringup. Hardware drivers create mappings to specific register re
 and query the status of peripherals.
 
 There are a few ways to do this with kernel code. Perhaps most directly, you can locate a task's translation tables
-and add manually write entries. This technique is described in detail in the ARM Architecture Reference Manuals, as
+and manually write entries. This technique is described in detail in the ARM Architecture Reference Manuals, as
 it is the low level method for setting up address translation. This was used by past jailbreaks after sysent was made 
 read only in order to facilitate syscall hooking for a userspace to kernelspace trampoline. This is also used by winocm's 
 shadowmap technique to allow reading and writing kernel memory from userspace. Ultimately, the existing kernel APIs for 
@@ -224,7 +224,7 @@ LDR w1, [x0]
 STR w1, [x0]
 ~~~
 
-Failure to do this results in a kernel panic, possibly an unaligned kernel data abort or a fault triggered by the memory
+Failure to do this results in a kernel panic: possibly an unaligned kernel data abort or a fault triggered by the memory
 controller.
 
 
