@@ -150,7 +150,7 @@ virtual to remapped addresses, but once the offsets are determined calculations 
 
 When working with kernel memory, since iOS 6 the kernel's virtual base is randomized between one of 256 possible locations
 on boot. The base in physical memory is not however, and is only determined by the device model and firmware version. On 
-32-bit devices this is either `0x80000000` (A4 and earlier) or `0x40000000` (A5 and newer). With 64-bit devices, DRAM is 
+32-bit devices this is either `0x40000000` (A4 and earlier) or `0x80000000` (A5 and newer). With 64-bit devices, DRAM is 
 based at `0x800000000` however the kernel base is located after a region of several MB reserved for the secure world. For 
 example, with the iPad5,4 on iOS 8.1 XNU starts at `0x800e00000`.
 
