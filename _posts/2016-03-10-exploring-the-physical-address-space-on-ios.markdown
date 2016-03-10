@@ -163,7 +163,7 @@ instruction cache).
 
 DRAM is shared in multiple contexts and not all of them are fully isolated from one another. During boot, LLB is loaded
 to SRAM but iBoot is loaded to DRAM. Prior to iOS 9 at least, iBoot was not cleared from memory before jumping to the 
-kernel so by mapping and scanning RAM it is possible to recover the firmware.
+kernel so by mapping and scanning DRAM it is possible to recover the firmware.
 
 On 64-bit devices, DRAM is used by other coprocessors as well. The Apple Storage Processor (NAND controller) has its
 firmware loaded by iBoot into the uppermost several MB of DRAM. This is another 32-bit ARM firmware based on iBoot. Since
@@ -199,7 +199,7 @@ In more exotic and inexplicable finds, there is a 4MB range located at `0x180000
 seems to have multiple uses. Based on serial console output during boot it corresponds with the SRAM region used by 
 LLB, but reading this from XNU does not get you this firmware. Instead it seems to be split into 2 regions of equal size.
 On T7000 devices, reading the first 2MB region gets you rapidly changing data. After some experimentation, it became clear 
-this was some sort of cache, as it contained 64-byte chunks of data from running programs (though sadly it did not seem to 
+this was some sort of cache, as it contained 64 byte chunks of data from running programs (though sadly it did not seem to 
 contain anything obviously from the secure world or other coprocessors). The second half of this region only caused a brief 
 hang followed by a reboot, however not the typical panic caused by the memory controller attempting to access a memory hole. 
 On T7001 devices, accesses to this entire region only seem to trigger a hang and reboot and do not yield cache data.
