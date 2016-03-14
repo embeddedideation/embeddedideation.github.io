@@ -105,10 +105,10 @@ Usage example:
 
 ~~~
 IOPhysicalAddress t7000SRAMBase = 0x180000000;
-IOByteCount       t7001SRAMLength = 0x200000;
+IOByteCount       t7000SRAMLength = 0x200000;
 
 IOMemoryDescriptor *descriptor = IOMemoryDescriptor::withPhysicalAddress(t7000SRAMBase,
-                                                                         t7001SRAMLength,
+                                                                         t7000SRAMLength,
                                                                          kIODirectionOutIn);
 
 /* can lookup in userspace with task_for_pid() and pass in */
