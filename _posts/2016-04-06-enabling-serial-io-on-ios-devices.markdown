@@ -143,7 +143,7 @@ By default on a production kernel, debug output is only sent to `syslog`. To als
 a couple of global variables must be adjusted.
 
 `printf()` and `IOLog()` are two functions used throughout the kernel for logging various interesting things. `printf()`
-calls `conslog_putc()` to handle writing it's output to the console. Similarly, `IOLog()` calls `cons_putc_locked()`.
+calls `conslog_putc()` to handle writing its output to the console. Similarly, `IOLog()` calls `cons_putc_locked()`.
 Both functions contain the following line:
 
 ~~~
@@ -237,7 +237,7 @@ Even though `serial_keyboard_init()` can be inlined, the function body is marked
 of the function's name. Comparing this to the open source code, locating the necessary functions should be trivial.
 
 A pointer to `serial_keyboard_start()` is passed to `kernel_thread_start_priority()` just prior to the aforementioned
-call to `panic()`. `serial_keyboard_start()` similarly calls `panic()` with it's name as part of the string passed.
+call to `panic()`. `serial_keyboard_start()` similarly calls `panic()` with its name as part of the string passed.
 
 `kernel_thread_start_priority()` takes the `serial_keyboard_start()` pointer and 0x5F (the value of `MAXPRI_KERNEL`) as 
 arguments.
