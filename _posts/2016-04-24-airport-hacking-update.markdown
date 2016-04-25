@@ -1,7 +1,7 @@
 ---
 layout:    post
 title:     "AirPort Hacking Update"
-date:      2016-04-24 18:00
+date:      2016-04-24 20:52
 ---
 
 Since writing [an article][airport-post] on the subject about 2 years ago, I've continued to poke at AirPort devices in 
