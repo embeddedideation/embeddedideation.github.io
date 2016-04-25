@@ -70,7 +70,7 @@ This is not fully implemented in the released code. [pysrp][pysrp] differs sligh
 be incompatible. AppleSRP is basically the [SRP reference implementation][srp-ref] modified on the client to use CommonCrypto
 and corecrypto rather than OpenSSL.
 
-[pysrp]: https://github.com/x56/airpyrt-tools/blob/master/acp/basebinary.py
+[pysrp]: https://pypi.python.org/pypi/srp/1.0.5
 [srp-ref]: http://srp.stanford.edu/
 
 In order to experiment with SRP, I [wrote a wrapper][clibs] around the AppleSRP framework using ctypes. This interface 
