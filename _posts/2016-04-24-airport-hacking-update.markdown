@@ -108,7 +108,7 @@ together a working toolchain for this purpose:
 First build the cross toolchain (this example is for ARM little endian):
 
 ```
-./build.sh 5 -U -u -a arm -m evbarm -D ../../evbarm/dest/ -O ../../evbarm/obj/ -R ../../evbarm/release/ -T ../../evbarm/tools/ tools
+./build.sh -U -u -a arm -m evbarm -D ../../evbarm/dest/ -O ../../evbarm/obj/ -R ../../evbarm/release/ -T ../../evbarm/tools/ tools
 ```
 
 On the second pass, use the same command but swap the final "tools" target with "release" to build all of userspace:
