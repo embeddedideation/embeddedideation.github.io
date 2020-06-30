@@ -7,11 +7,9 @@ permalink: /about/
 
 This is a personal blog for documenting various research projects and possibly other infosec related topics.
 
-If you have questions or comments, please [open an issue][open-an-issue] or contact me at one of the places listed below.
-
 Thanks for reading!
 
-[open-an-issue]: https://github.com/embeddedideation/embeddedideation.github.io/issues
+(If you reached out in the past about one of my projects and I didn't reply, please accept my apologies. This blog and associated projects continue to be on hiatus.)
 
 ## Contact
 
