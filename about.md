@@ -14,5 +14,5 @@ Thanks for reading!
 ## Contact
 
 * Twitter: [@0x56](https://twitter.com/0x56)
-* IRC: x56 on Freenode
+* IRC: x56 on ~~Freenode~~, libera.chat, OFTC
 * Email: [embeddedideation@gmail.com](mailto:embeddedideation@gmail.com)
