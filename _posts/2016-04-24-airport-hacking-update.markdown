@@ -8,7 +8,7 @@ Since writing [an article][airport-post] on the subject about 2 years ago, I've 
 my spare time. This will most likely be my final post on the subject, so I'll provide some code I wrote and a brief 
 description of discoveries made along the way.
 
-[airport-post]: http://embeddedideation.com/2014/03/dissecting-the-airport-express/
+[airport-post]: https://embeddedideation.com/2014/03/dissecting-the-airport-express/
 
 
 ## AirPyrt Tools
@@ -31,7 +31,7 @@ undocumented type of plist. It is similar to the [bplist format][cfbinaryplist-s
 demarcated by an identifier and in some cases a size value (see `OBJECT TABLE` starting at line 244). It does not support
 key/object references or set types however, and objects are concatenated (or in the case of dicts, nested).
 
-[cfbinaryplist-source]: http://opensource.apple.com/source/CF/CF-1153.18/CFBinaryPList.c
+[cfbinaryplist-source]: https://opensource.apple.com/source/CF/CF-1153.18/CFBinaryPList.c
 
 The [Python implementation][cflbinary-source] handles composing and parsing cflbinary plists. It does not support date 
 objects, but I did not find that object type in any captures (though it is supported by the client and server).
@@ -41,7 +41,7 @@ objects, but I did not find that object type in any captures (though it is suppo
 
 ### Basebinary Firmware
 
-Firmware updates are available from [http://apsu.apple.com/version.xml](http://apsu.apple.com/version.xml). I wrote
+Firmware updates are available from [https://apsu.apple.com/version.xml](https://apsu.apple.com/version.xml). I wrote
 a [simple script][grab-firmwares] to parse this plist and download all available firmwares.
 
 [grab-firmwares]: https://gist.github.com/x56/7790380ea7a8980c69c3

@@ -269,4 +269,4 @@ XNU (albeit at a later point) this should be universal.
 As always, [feedback is welcome][contact] if I've missed something. I'd also be interested to hear if this works on iOS 9
 if anyone gets around to trying.
 
-[contact]: http://embeddedideation.com/about/
+[contact]: https://embeddedideation.com/about/

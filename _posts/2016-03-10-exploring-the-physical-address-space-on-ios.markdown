@@ -124,7 +124,7 @@ For full documentation of these classes, consult each [class reference][mac-deve
 [XNU source][xnu-source].
 
 [mac-developer-library]: https://developer.apple.com/library/mac/navigation/
-[xnu-source]: http://opensource.apple.com/source/xnu/
+[xnu-source]: https://opensource.apple.com/source/xnu/
 
 
 ## Interesting Targets

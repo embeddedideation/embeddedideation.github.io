@@ -9,13 +9,13 @@ ARM to the platform. This is the first Freescale SoC to get a port, as well as m
 expert for XNU. Currently this boots on the device, however there are issues that still need to be addressed before I 
 would consider things to be working properly.
 
-[usb-armory-jtag]: http://embeddedideation.com/2015/12/16/usb-armory-jtag-interface/
+[usb-armory-jtag]: https://embeddedideation.com/2015/12/16/usb-armory-jtag-interface/
 
 Please note, I've tried to make things as accurate as possible, but I'm still learning about many platform components.
 Take what you read with a grain of salt and don't rely on it for anything important. Please [drop me a line][contact-page]
 if you spot any issues here!
 
-[contact-page]: http://embeddedideation.com/about/
+[contact-page]: https://embeddedideation.com/about/
 
 
 ## Configuration
@@ -57,7 +57,7 @@ The platform expert provides a layer between XNU and some hardware that is requi
 Some documentation on writing one for Darwin on ARM was provided by winocm, which is now [archived][ios-on-my-toaster].
 Several examples are also present in the XNU source under `pexpert/arm/`.
 
-[ios-on-my-toaster]: http://web.archive.org/web/20140625044307/http://winocm.com/research/2013/09/08/ios-on-my-toaster/
+[ios-on-my-toaster]: https://web.archive.org/web/20140625044307/https://winocm.com/research/2013/09/08/ios-on-my-toaster/
 
 The most important part of this is to set up interrupts and a timer in order to drive the system tick. This is a
 requirement for operation of the scheduler. A serial console is desirable for logging and debugging system boot, as well 

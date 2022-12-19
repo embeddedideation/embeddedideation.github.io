@@ -59,8 +59,8 @@ of the EMI shield anchors; with the anchor removed, I was able to view the packa
 ![Winbond SPI flash]({{ site.url }}/assets/a1392-spi-flash.jpg)
 _Winbond 25Q129BVEG 128Mbit SPI Flash_
 
-[prev-teardown-1]: http://weblog.rogueamoeba.com/2012/06/19/airport-express-disassembly/
-[prev-teardown-2]: http://www.smallnetbuilder.com/wireless/wireless-features/31794-inside-story-apple-airport-express-2012-and-wd-my-net-n900
+[prev-teardown-1]: https://weblog.rogueamoeba.com/2012/06/19/airport-express-disassembly/
+[prev-teardown-2]: https://www.smallnetbuilder.com/wireless/wireless-features/31794-inside-story-apple-airport-express-2012-and-wd-my-net-n900
 
 ## Serial Console
 
@@ -91,7 +91,7 @@ more on that later) has built-in functions to read and write at arbitrary memory
 the GPIO registers are mapped at 0x18040000. Dumping 0x6F bytes at that location gives us the current state of these 
 registers:
 
-[jtagenum]: http://deadhacker.com/2010/02/03/jtag-enumeration/
+[jtagenum]: https://deadhacker.com/2010/02/03/jtag-enumeration/
 
 ~~~
 CFE> d 0x18040000 0x6F  
@@ -160,7 +160,7 @@ Firmware updates are distributed from Apple as basebinary files. The basebinary 
 encrypted. The file header contains a magic string, an integer representing the product ID of the device that the firmware
 targets, and several more bytes of unknown function. The Adler-32 checksum of the basebinary is appended to the file.
 
-AirPort Utility checks [http://apsu.apple.com/version.xml](http://apsu.apple.com/version.xml) for updates. When updating
+AirPort Utility checks [https://apsu.apple.com/version.xml](https://apsu.apple.com/version.xml) for updates. When updating
 the device's firmware, both the basebinary and a signature file are downloaded to the host. The firmware update is verified
 before it is sent to the device. It is verified again on the device, then unpacked and written to flash storage.
 
@@ -187,7 +187,7 @@ daemons being full control of the target device.
 ## Wiki
 
 In order to bring together those interested in hacking the AirPort family of devices, capin established
-[The AirPort Wiki](http://www.theairportwiki.com/). The goal of this wiki is to document device internals, and lay the
+[The AirPort Wiki](https://www.theairportwiki.com/). The goal of this wiki is to document device internals, and lay the
 groundwork for adding new features to the device, or possibly porting a custom firmware. More technical details of my
 research will be added to the wiki as I have the opportunity to assemble and publish them. There is an associated IRC
 channel, #theairportwiki on Freenode, for the discussion of hacking AirPort devices.
