@@ -3,7 +3,6 @@
 ## Author
 
 **Vince Cali**
-- <https://twitter.com/0x56>
 
 ## Theme
 

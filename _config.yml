@@ -27,7 +27,6 @@ markdown: kramdown
 # About/contact
 author:
   name:              Vince Cali
-  url:               https://twitter.com/0x56
   email:             embeddedideation@gmail.com
 
 gems:
