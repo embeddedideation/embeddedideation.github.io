@@ -13,7 +13,9 @@ Thanks for reading!
 
 ## Contact
 
-* Twitter: [@0x56](https://twitter.com/0x56)
 * Mastodon: [@0x56@mastodon.social](https://mastodon.social/@0x56)
-* IRC: x56 on libera.chat, OFTC
-* Email: [embeddedideation@gmail.com](mailto:embeddedideation@gmail.com)
+* cohost:   [@0x56](https://cohost.org/0x56)
+* IRC:      x56 on libera.chat, OFTC
+* email:    [embeddedideation@gmail.com](mailto:embeddedideation@gmail.com)
+
+* Twitter (deprecated): [@0x56](https://twitter.com/0x56)
